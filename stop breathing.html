@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Breathing</title>
+    <link rel="stylesheet" href="level_styles.css">
+</head>
+
+<script>
+    function copyToClipboard() {
+        const text = document.getElementById("level-id").querySelector("p").innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            alert("ID уровня скопирован: " + text);
+        }).catch(err => {
+            console.error("Ошибка копирования в буфер обмена: ", err);
+        });
+    }
+</script>
+
+<script>
+    function copyLevelTitle() {
+        const text = document.querySelector(".level-title").innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            alert("Текст скопирован: " + text);
+        }).catch(err => {
+            console.error("Ошибка копирования в буфер обмена: ", err);
+        });
+    }
+</script>
+
+<body>
+
+    <header>
+        <h1>Сігма демон лист</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Топ найскладніших рівнів</a></li>
+                <li><a href="top_players.html">Топ гравців</a></li>
+                <li><a href="top_platformers.html">Топ платформерів</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Используйте класс .level-content для применения стилей к содержимому страницы уровня -->
+        <div class="level-content">
+            <div class="mini-sections">
+                <div class="main-section">
+                    <h3 class="level-title" onclick="copyLevelTitle()">Stop Breathing</h3>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <!-- Вставьте код для встраивания YouTube-видео -->
+                <!-- Например, используйте тег iframe: -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UfUYwAb5AKo?si=F26V70lUXMKlNVy_" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="mini-sections">
+            <div class="mini-section" id="level-id" onclick="copyToClipboard()">
+                <h3>ID рівня</h3>
+                <p>108212471</p>
+            </div>
+            <div class="mini-section">
+                <h3>Довжина рівня</h3>
+                <p>1:06</p> <!-- Замените на фактическую длину уровня -->
+            </div>
+            <div class="mini-section">
+                <h3>Бали за рівень</h3>
+                <p>740</p> <!-- Замените на фактическое количество баллов -->
+            </div>
+        </div>
+
+<!-- Новая секция ниже -->
+        <div class="player-info rating-section">
+            <div class="header-row">
+                <div class="header-cell">Гравець</div>
+                <div class="header-cell">Прогрес</div>
+                <div class="header-cell">Пруф</div>
+            </div>
+
+            <div class="player-row">
+                <div class="player-cell">LAFF</div>
+                <div class="player-cell">100%</div>
+                <div class="player-cell"><a href="https://youtu.be/AjJOE60FUyo?si=XCivcEmWs5dDwE94" target="_blank" class="proof-link">Пруф</a></div>
+            </div>
+
+            <!-- Повторити для інших гравців -->
+        </div>
+
+    </main>
+
+</body>
+</html>
