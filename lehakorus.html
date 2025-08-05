@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профіль гравця</title>
+    <link rel="stylesheet" href="player_profile_styles.css">
+</head>
+<body>
+    <header>
+        <h1>Профіль гравця</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Топ найскладніших рівнів</a></li>
+                <li><a href="top_players.html">Топ гравців</a></li>
+                <li><a href="top_platformers.html">Топ платформерів</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Основная информация -->
+        <section class="profile-section">
+            <div class="profile-picture">
+                <img src="lehakorus.jpg" alt="Аватар игрока">
+            </div>
+            <div class="profile-details">
+                <p class="player-nickname"></p>
+                <p>Локація: Коростень</p>
+            </div>
+        </section>
+
+        <!-- Статистика -->
+        <section class="stats">
+            <div class="stat-item">
+                <h3>Місце в топі</h3>
+                <p>5</p>
+            </div>
+            <div class="stat-item">
+                <h3>Всього балів</h3>
+                <p>2233</p>
+            </div>
+            <div class="stat-item">
+                <h3>Топ 10 досягнень</h3>
+                <p>CraZy III</p>
+                <p>Damage</p>
+                <p>Poltergeist</p>
+                <p>CraZy II</p>
+                <p>Forest Tample</p>
+                <p>FairyDust</p>
+                <p>CraZy</p>
+                <p>Nine Circles</p>
+                <p>JawBreaker</p>
+                <p>Fire Tample</p>
+            </div>
+            <div class="stat-item">
+                <h3>Найскладніший пройдений рівень</h3>
+                <p>CraZy III</p>
+            </div>
+            <div class="stat-item">
+                <h3>Кількість пройдених рівнів</h3>
+                <p>Екстрим демонів: 0</p>
+                <p>Інсейн демонів: 4</p>
+                <p>Хард демонів: 6</p>
+            </div>
+        </section>
+    </main>
+    <style>
+        .stats {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .stat-item {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: #FFFFFF;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+            .stat-item h3 {
+                margin-bottom: 10px;
+                font-size: 18px;
+                color: #FFD700;
+            }
+
+            .stat-item p {
+                margin: 5px 0;
+            }
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+            header nav ul li {
+                margin: 0 15px;
+            }
+
+                header nav ul li a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+
+                    header nav ul li a:hover {
+                        color: #FFA500;
+                    }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
