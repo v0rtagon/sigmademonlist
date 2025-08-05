@@ -1,0 +1,551 @@
+/* level_styles.css */
+
+/* Ваши общие стили для всех страниц */
+
+/* Общие стили для всех страниц */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Напівпрозорий чорний фон з пріоритетом */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em;
+    margin: 0; /* Вирівнює відступи з головною */
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 20px; /* Додає відступи, як на головній */
+    }
+
+        nav li:last-child {
+            margin-right: 0; /* Забирає відступ у останнього елемента */
+        }
+
+    nav a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 5px 10px; /* Додає відступи, щоб вирівняти з головною */
+    }
+
+        nav a:hover {
+            color: #FFA500;
+        }
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-container {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.image-container img {
+    border-radius: 20px;
+    max-width: 350px;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.content {
+    align-self: flex-start;
+    text-align: left;
+}
+
+section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Добавляем стили для кнопки */
+section button {
+    background-color: #4CAF50; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Внутренний отступ кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    border: none; /* Убираем границу кнопки */
+    border-radius: 5px; /* Скругляем углы кнопки */
+    cursor: pointer; /* Устанавливаем стиль указателя при наведении */
+}
+
+.level-info h2 {
+    color: #FFFFFF;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.level-info p {
+    color: #CCCCCC;
+    font-size: 16px;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    margin-top: 20px;
+}
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 15px;
+    }
+
+.mini-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.mini-section {
+    flex: 0 0 30%;
+    background-color: rgba(0, 0, 0, 0.4); /* Менш прозорий фон */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    transition: transform 0.3s ease;
+    text-align: center; /* Центрування тексту */
+}
+
+    .mini-section:hover {
+        transform: scale(1.05);
+    }
+
+    .mini-section h3 {
+        color: #FFFFFF; /* Білий колір для заголовка */
+        font-size: 20px;
+        margin-bottom: 8px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Тінь для заголовка */
+    }
+
+    .mini-section p {
+        color: #FFFFFF; /* Білий колір для основного тексту */
+        font-size: 16px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Легка тінь для тексту */
+    }
+
+.rating-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.player-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #555;
+    color: #CCCCCC;
+}
+
+.player-cell a {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #555555;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #444444;
+    }
+
+/* Добавленные стили для новой секции */
+.rating-section {
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-cell, .player-cell {
+    flex: 1;
+    text-align: center;
+}
+
+.player-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3A3339; /* Тло як на головній */
+    background-image: url("photo1707668555.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #F0F0F0; /* Світлий текст */
+}
+
+header, .header-row {
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main-section {
+    background-color: rgba(0, 0, 0, 0.4); /* Менш прозорий фон */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em; /* Збільшений розмір тексту */
+    flex: 0 0 90%; /* Займає більшу частину ширини */
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Більш виразна тінь */
+    transition: transform 0.3s ease; /* Плавний перехід */
+}
+}
+
+.main-section h3 {
+    font-size: 32px !important; /* Збільшений заголовок */
+    margin-bottom: 10px;
+}
+
+    .main-section p {
+        font-size: 18px; /* Збільшений текст */
+    }
+
+    .main-section:hover {
+        transform: scale(1.03);
+        transition: transform 0.7s ease;
+    }
+
+.player-info {
+    background-color: rgba(0, 0, 0, 0.6); /* Менш прозорий фон */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto; /* Вирівнює по центру */
+    max-width: 800px; /* Встановлює максимальну ширину для узгодження з іншими блоками */
+}
+
+.header-row, .player-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #FFFFFF;
+}
+
+.header-row {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.player-cell, .header-cell {
+    flex: 1;
+    text-align: center;
+}
+
+    .player-cell a {
+        color: #FFD700;
+        text-decoration: underline;
+    }
+
+.level-title {
+    font-size: 32px !important; /* Примусовий великий розмір */
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.proof-link {
+    color: #CCCCCC !important; /* Наприклад, золотий колір для виділення */
+    font-weight: bold; /* За бажанням, додатково виділіть текст жирним */
+}
+
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+body {
+    background-image: url("photo1707668555.png"); /* Замените "путь_к_изображению.jpg" на путь к вашему изображению */
+    background-size: cover; /* Растягиваем изображение на всю область экрана */
+    background-position: center; /* Центрируем изображение */
+    background-attachment: fixed; /* Устанавливаем фон как фиксированный */
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    section {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .image-container {
+        padding: 10px;
+    }
+
+    header, footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    /* Reduce button and image sizes for mobile */
+    button, img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+# Re-import necessary libraries for the code to run correctly after a reset
+import os
+
+# Redefine the path to the styles.css file
+css_file_path = "/mnt/data/сайтик_чочочо/сайтик чочочо/styles.css"
+
+# Define the color scheme CSS again
+color_scheme_css = """
+/* Updated color scheme for bright background */
+body {
+    color: #F0F0F0; /* Light grey for readability on bright background */
+}
+
+header, footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    color: #F0F0F0; /* Light grey text color */
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black for blocks */
+    color: #FFFFFF; /* White text for contrast */
+}
+
+button {
+    background-color: #007ACC; /* Muted blue for buttons */
+    color: #FFFFFF; /* White text for buttons */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #005F99; /* Darker blue on hover */
+    }
+
+/* Ensure link colors are readable */
+a {
+    color: #FFD700; /* Golden color for links */
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #FFA500; /* Orange color on hover */
+    }
+
+"""
+
+# Append the new color scheme to the main styles.css file
+with open(css_file_path, 'a', encoding='utf-8') as file:
+file.write("\n" + color_scheme_css)
+
+# Confirm that changes were made
+color_scheme_css
+
+# Define additional CSS styling for text to improve readability over the bright background
+text_styling_css = """
+/* Text styling for readability on a bright background */
+body {
+    color: #E0E0E0; /* Light grey text for readability */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #FFFFFF; /* White for headers */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Light shadow to stand out */
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    color: #F0F0F0; /* Slightly off-white for paragraph text */
+    line-height: 1.6; /* Increased line-height for better readability */
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Styling for links within the text */
+a {
+    color: #FFD700; /* Golden color for links to match theme */
+    text-decoration: underline;
+}
+
+    a:hover {
+        color: #FFA500; /* Orange on hover for links */
+    }
+
+"""
+
+# Append the text styling to the styles.css file for implementation
+try:
+with open(css_file_path, 'a', encoding='utf-8') as file:
+file.write("\n" + text_styling_css)
+except FileNotFoundError as e:
+text_styling_css # Outputting the changes in case user needs to add them manually
+/* Enhanced text styling for improved contrast on semi-transparent backgrounds */
+body, p {
+    color: #FFFFFF !important; /* Чисто білий текст з пріоритетом */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #FFFFFF !important; /* Білий для заголовків з пріоритетом */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Тінь для контрасту */
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Styling for links */
+a {
+    color: #FFD700; /* Bright golden for links */
+    text-decoration: underline;
+}
+
+    a:hover {
+        color: #FFA500; /* Orange on hover for links */
+    }
+
+
+/* Specific styling to ensure text appears white */
+
+body, p, .level-description, section h2, section p {
+    color: #FFFFFF !important; /* Ensure text is white */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, .level-description {
+    color: #FFFFFF !important; /* White for headers and important descriptions */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better contrast */
+}
+

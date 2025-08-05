@@ -1,0 +1,118 @@
+/* Основний стиль для сторінки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3A3339;
+    background-image: url("photo1707668555.png"); /* Замінити на ваш шлях */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #F0F0F0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+            header nav ul li a {
+                text-decoration: none;
+                color: #FFFFFF;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+                header nav ul li a:hover {
+                    color: #FFA500;
+                }
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Для секцій */
+section {
+    background-color: rgba(0, 0, 0, 0.7); /* Чорний фон секцій */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Розподіл простору між зображенням і текстом */
+    align-items: center; /* Центруємо елементи вертикально */
+    gap: 20px;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+    section:hover {
+        transform: scale(1.02); /* Збільшення секції при наведенні */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    }
+
+/* Для контейнера зображення */
+.image-container {
+    text-align: center;
+}
+
+    .image-container img {
+        max-width: 100%;
+        max-height: 200px; /* Зменшуємо висоту для кращого заповнення простору */
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+/* Для текстового контенту */
+.content {
+    text-align: left;
+}
+
+/* Стилі заголовків і кнопок */
+section h2 {
+    color: #C0C0C0; /* Менш яскравий колір для заголовка */
+    font-size: 32px; /* Збільшений розмір тексту */
+    margin-bottom: 10px;
+    margin-top: 0; /* Зменшуємо відступ зверху */
+}
+
+section p {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Мобільна адаптація */
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr; /* Перехід до вертикального розташування */
+        padding: 15px;
+    }
+
+    .image-container img {
+        max-height: 150px; /* Додаткове зменшення висоти для мобільних пристроїв */
+    }
+}
